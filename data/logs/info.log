@@ -1,0 +1,19 @@
+ACTIVANDO SESION 1517527613
+INFO: Localizando lista de niveles en data/recursos/niveles.txt
+INFO: Finalizada carga de 9 niveles.
+INFO: Cargando nivel en fichero data/mapas/001.txt
+INFO: Iniciando lectura de lineas ESTRUCTURA
+INFO: Iniciando lectura de lineas INFO
+INFO: Iniciando lectura de lineas META
+scroll camara x:0 scroll camara y:0 => 0,0 [400,300]
+INFO: Iniciando lectura de lineas CIERRA_META
+INFO: Iniciando lectura de lineas REJILLA
+nivel de 49 x 18
+Iniciando lectura de 1 celdas
+INFO: Iniciando lectura de lineas CELDAS
+Iniciando lectura de 232 celdas
+INFO: Iniciando lectura de lineas LOGICA
+INFO: Iniciando lectura de lineas OBJETOS
+INFO: Iniciando lectura de lineas FIN_ESTRUCTURA
+
+FINALIZANDO SESION 1517527663

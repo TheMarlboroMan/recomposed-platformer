@@ -1,0 +1,9 @@
+1	data/mapas/001.txt
+2	data/mapas/002.txt
+3	data/mapas/003.txt
+4	data/mapas/004.txt
+5	data/mapas/005.txt
+6	data/mapas/006.txt
+7	data/mapas/007.txt
+8	data/mapas/008.txt
+999	data/mapas/test.txt

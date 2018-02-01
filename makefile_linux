@@ -1,0 +1,18 @@
+#Definiciones.
+
+#OPTIMIZACION=-O3
+OPTIMIZACION=
+SIMBOLOS_DEBUG=-g
+FLAGS_BASE=-Wno-deprecated -Wall -ansi -pedantic -std=c++11
+
+CFLAGS=-c $(SIMBOLOS_DEBUG) $(OPTIMIZACION) $(FLAGS_BASE)
+CFLAGS_TARGET_FINAL=$(SIMBOLOS_DEBUG) $(OPTIMIZACION) $(FLAGS_BASE)
+CC=g++
+EJECUTABLE=a.out
+LIMPIAR=rm objects/*; rm $(EJECUTABLE);
+
+LINKER=-L/home/dani/programacion/libdansdl2 -lDanSDL2 -L. -lSDL2 -lSDL2_mixer -lSDL2_ttf -lSDL2_image -lGL
+INCLUDES=-I /home/dani/programacion/libdansdl2 -I ./tools -I /home/dani/programacion/capa_compatibilidad_libdansdl2
+LIBRERIAS=
+
+include makefile_comun

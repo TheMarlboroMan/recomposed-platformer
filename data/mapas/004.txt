@@ -1,0 +1,73 @@
+[INFO]
+25 57
+[CAMARA]
+0 1
+[MAPA]
+ #                     # 
+ #                     # 
+ #                     # 
+ #                     # 
+ #                     # 
+ #                     # 
+ #                     # 
+ #                     # 
+##                     ##
+                         
+                     H   
+############   ##   #M###
+           #         H#  
+           #         H#  
+           #         H#  
+           #         H#  
+           #         H#  
+           #         H#  
+           #xxxxxxx  H#  
+           ########  H#  
+           #      H  H#  
+           #      H  H#  
+           #      H  H#  
+           #      H  H#  
+           #      H   #  
+           #    ##M   #  
+           #      H  x#  
+           #      H  ##  
+           #      H  H#  
+           #      H  H#  
+           #      H  H#  
+           #         H#  
+           #         H#  
+           #         H#  
+           #         H#  
+           #         H#  
+           #         H#  
+           #         H#  
+           #         H#  
+    ########         H#  
+   #       #         H#  
+   #       #         H#  
+   #       #xxxxxxxxxH#  
+   #       ##########H#  
+   #                 H # 
+   #                 H # 
+   #                 H # 
+   ######      ######### 
+   #                   # 
+   #                   # 
+   #                   # 
+   #                   # 
+   #                   # 
+   #                   # 
+   #                   # 
+   #                   # 
+    xxxxxxxxxxxxxxxxxxx  
+
+[CONEXIONES]
+?ENTRADAS
+?1	id	x	y	dir	estado
+1	1	1	10	1	1
+1	2	23	10	2	1
+
+?SALIDAS
+?2	nivel	id	x	y
+2	3	2	0	10
+2	5	1	24	10

@@ -1,0 +1,38 @@
+DEP_HERRAMIENTAS_PROYECTO=$(DIR_O)tabla_sprites.o \
+$(DIR_O)generador_numeros.o \
+$(DIR_O)lector_txt.o \
+$(DIR_O)controlador_argumentos.o \
+$(DIR_O)string_utilidades.o \
+$(DIR_O)localizador_base.o \
+
+
+DEP_CLASES_APP=$(DIR_O)celda.o\
+$(DIR_O)cargador_mapas.o\
+$(DIR_O)nivel.o\
+$(DIR_O)conexiones.o\
+$(DIR_O)mapa.o\
+$(DIR_O)jugador.o\
+$(DIR_O)jugador_estados.o\
+$(DIR_O)representable.o\
+$(DIR_O)actor.o\
+$(DIR_O)movil.o\
+$(DIR_O)espaciable.o\
+$(DIR_O)representador.o\
+
+DEP_CONTROLADORES=$(DIR_O)director_estados.o \
+$(DIR_O)controlador_base.o \
+$(DIR_O)controlador_juego.o \
+
+DEP_FRAMEWORK_BASE=$(DIR_O)input_base.o \
+$(DIR_O)configuracion_base.o \
+$(DIR_O)audio_base.o \
+$(DIR_O)cargador_recursos_base.o \
+$(DIR_O)kernel_base.o \
+
+DEP_FRAMEWORK_DERIVADA=$(DIR_O)input.o \
+$(DIR_O)configuracion.o \
+$(DIR_O)localizador.o \
+$(DIR_O)audio.o \
+$(DIR_O)cargador_recursos.o \
+$(DIR_O)kernel.o \
+

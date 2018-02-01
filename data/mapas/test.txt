@@ -1,0 +1,67 @@
+[INFO]
+50 99
+[MAPA]
+##################################################
+##                           H  H  H  H  H       #
+##                              H  H  H  H       #
+##H          /=###                 H  H  H       #
+##M#        / #                       H  H       #
+##H        / ##                H         H       #
+##H        ##           #######M#####    ######--#
+# H        #                   H         #  H    #
+# H  H     #                          #  H  H  --#
+#####M#######    /=########        #  H  H  H    #
+#####H          /=              #  H  H  H  H  --#
+#### H         /=               H  H  H  H  #    #
+###  H        /=                H  H  H  #     -##
+##   H       /=                 H  H  #         ##
+#    H  H   /=                  H  #            ##
+#   /=##M####                   #              /##
+#  / #  H      /==\                       /\  /  #
+# /  #  H     / ## \   H  /=\ /=##    #  /  \/   #
+#######################M##########################
+##       #       #H    H##########################
+##H      #       #H    H##             H  H      #
+##M####  |    ####H    H##             H  H      #
+##H   #  |       #H    H##                 ###   #
+##H   |  #       #H    H##                 # |   #
+##M###|  #   #####H    H##      ######     | |   #
+##H      |       #H    H##            #|   | #   #
+##H      |       #H   #M##             |   # #   |
+##M#######  ######H    H               #   | #   |
+##H               H    H   H           |   | #   #
+##H               H   #####M#          |   # |   #
+##H               H     # #H# H |##    #   | |   #
+##H               H     # #H# H |      |   | #   #
+##H               H     # #H| H #      |   # #   |
+#######  ####   ###     # #H| H |          | #   |
+#     #  #  #-  # #     # #H  H |          | #   #
+#     ####  #   # #-    # #H  H #         H# |   #
+#           ##### #   H # ##| H |       ##M##|   #
+######################M##   | H |         H ##   #
+######################H##   # H #         H ##   |
+#               #     H #   | H #         H ##   |
+#               #     H #   | H |        -####   #
+#                     H #   # H |           #|   #
+#--                   H #  ######        -  #|   #
+#  J      H           H #  #                ##   #
+#####    #M####    /=####  #             -  ##   |
+#         H   #######   #  #               H##   |
+#         H          #######             -#M##   #
+#         H                                H#|   #
+#         H                                H#|   #
+#         H                                H##   #
+##=\      H          /=#####               H     |
+    ##   ######     /      #               H     |
+     #   #    #   ##       #          ###  H  ### 
+     #   #    #   #        #    ####  # #######   
+     #   #    #   #        #    #  #  # #     #   
+     #   #    #   #        #    #  #  # #     #   
+      xxx      xxx          xxxx    xx   xxxxx    
+[CONEXIONES]
+?1 - Tipo entrada de nivel. id, x, y (en mundo celda), direccion en la que se mira, 1 es izquierda, 2 es derecha..., quizás estado, por si conectamos con escaleras. El jugador aparecería en la parte de abajo.
+?1	id	x	y	dir	estado
+1	1	4	32 	2	1
+?2 - Tipo salida de nivel. Nivel comunica, id entrada, x, y (en mundo celda). Mediría siempre... 32x32, una celda.
+?2	nivel	id	x	y
+2	1	1	15	35

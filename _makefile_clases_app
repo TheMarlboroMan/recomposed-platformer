@@ -1,0 +1,91 @@
+################################################################################
+#Definciones
+
+DIR_CLASES_APP=./class/app/
+DIR_NIVEL=$(DIR_CLASES_APP)niveles/
+DIR_GRAFICOS=$(DIR_CLASES_APP)graficos/
+DIR_CARGADORES=$(DIR_CLASES_APP)cargadores/
+DIR_JUEGO=$(DIR_CLASES_APP)juego/
+
+################################################################################
+#Clases...
+
+$(DIR_O)celda.o :\
+$(DIR_O)tabla_sprites.o \
+$(DIR_O)representable.o \
+$(DIR_O)espaciable.o \
+$(DIR_CLASES_APP)recursos.h \
+$(DIR_NIVEL)celda.h \
+$(DIR_NIVEL)celda.cpp
+	$(CC) $(CFLAGS) $(INCLUDES) $(DIR_NIVEL)celda.cpp -o $(DIR_O)celda.o
+
+$(DIR_O)cargador_mapas.o :\
+$(DIR_O)mapa.o \
+$(DIR_CARGADORES)cargador_mapas.h \
+$(DIR_CARGADORES)cargador_mapas.cpp
+	$(CC) $(CFLAGS) $(INCLUDES)  $(DIR_CARGADORES)cargador_mapas.cpp -o $(DIR_O)cargador_mapas.o
+
+
+$(DIR_O)nivel.o :\
+$(DIR_O)celda.o \
+$(DIR_NIVEL)nivel.h \
+$(DIR_NIVEL)nivel.cpp
+	$(CC) $(CFLAGS) $(INCLUDES)  $(DIR_NIVEL)nivel.cpp -o $(DIR_O)nivel.o
+
+$(DIR_O)conexiones.o :\
+$(DIR_O)actor.o \
+$(DIR_JUEGO)conexiones.h \
+$(DIR_JUEGO)conexiones.cpp
+	$(CC) $(CFLAGS) $(INCLUDES)  $(DIR_JUEGO)conexiones.cpp -o $(DIR_O)conexiones.o
+
+$(DIR_O)mapa.o :\
+$(DIR_O)nivel.o \
+$(DIR_O)conexiones.o \
+$(DIR_NIVEL)mapa.h \
+$(DIR_NIVEL)mapa.cpp
+	$(CC) $(CFLAGS) $(INCLUDES)  $(DIR_NIVEL)mapa.cpp -o $(DIR_O)mapa.o
+
+$(DIR_O)jugador.o :\
+$(DIR_O)tabla_sprites.o \
+$(DIR_O)jugador_estados.o \
+$(DIR_O)actor.o \
+$(DIR_O)movil.o \
+$(DIR_O)representable.o \
+$(DIR_CLASES_APP)recursos.h \
+$(DIR_JUEGO)input_usuario.h \
+$(DIR_JUEGO)jugador.h \
+$(DIR_JUEGO)jugador.cpp
+	$(CC) $(CFLAGS) $(INCLUDES)  $(DIR_JUEGO)jugador.cpp -o $(DIR_O)jugador.o
+
+$(DIR_O)jugador_estados.o :\
+$(DIR_JUEGO)jugador_estados.h \
+$(DIR_JUEGO)jugador_estados.cpp \
+$(DIR_JUEGO)input_usuario.h
+	$(CC) $(CFLAGS) $(INCLUDES)  $(DIR_JUEGO)jugador_estados.cpp -o $(DIR_O)jugador_estados.o
+
+$(DIR_O)representable.o :\
+$(DIR_GRAFICOS)representable.h \
+$(DIR_GRAFICOS)representable.cpp
+	$(CC) $(CFLAGS) $(INCLUDES)  $(DIR_GRAFICOS)representable.cpp -o $(DIR_O)representable.o
+
+$(DIR_O)actor.o :\
+$(DIR_O)espaciable.o\
+$(DIR_JUEGO)actor.h \
+$(DIR_JUEGO)actor.cpp
+	$(CC) $(CFLAGS) $(INCLUDES)  $(DIR_JUEGO)actor.cpp -o $(DIR_O)actor.o
+
+$(DIR_O)movil.o :\
+$(DIR_JUEGO)movil.h \
+$(DIR_JUEGO)movil.cpp
+	$(CC) $(CFLAGS) $(INCLUDES)  $(DIR_JUEGO)movil.cpp -o $(DIR_O)movil.o
+
+$(DIR_O)espaciable.o :\
+$(DIR_JUEGO)espaciable.h \
+$(DIR_JUEGO)espaciable.cpp
+	$(CC) $(CFLAGS) $(INCLUDES)  $(DIR_JUEGO)espaciable.cpp -o $(DIR_O)espaciable.o
+
+$(DIR_O)representador.o :\
+$(DIR_O)representable.o \
+$(DIR_GRAFICOS)representador.h \
+$(DIR_GRAFICOS)representador.cpp
+	$(CC) $(CFLAGS) $(INCLUDES)  $(DIR_GRAFICOS)representador.cpp -o $(DIR_O)representador.o
