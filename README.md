@@ -2,6 +2,10 @@
 
 A reconstruction of some files laying around named just "plataformer". I found those in my website when doing cleaning up chores and just had to get them running.
 
+##Controls
+
+As far as I know, arrows move and space jumps. You can do strange things, like down+jump, double tap forward or double tap forward+jump to activate some abilities. Seems you can jump on some walls too.
+
 ##Building this stuff
 
 The "tools" project has been hacked into the project to simulate its state whitin the original period when this was written.
